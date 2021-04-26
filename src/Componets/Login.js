@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Login() {
+const Login = (props) => {
   return (
     <Container>
       <Content>
@@ -19,7 +19,7 @@ function Login() {
       </Content>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   overflow: hidden;
@@ -90,19 +90,19 @@ const SignUp = styled.a`
 `;
 
 const Description = styled.p`
-color: hsla(0, 0%, 95.3%, 1);
-font-size: 12px;
-margin: 0 0 24px;
-line-height: 1.5;
-letter-spacing:1.5px;
+  color: hsla(0, 0%, 95.3%, 1);
+  font-size: 12px;
+  margin: 0 0 24px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 `;
 
 const CTALogoTwo = styled.img`
-max-width: 600px;
-margin-bottom: 20px;
-display: line-block;
-vertical-align: bottom;
-width:100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  display: line-block;
+  vertical-align: bottom;
+  width: 100%;
 `;
 
 export default Login;
